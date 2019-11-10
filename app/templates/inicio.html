@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div align="center">
+	<table>
+		<embed src="https://www.flipcause.com/embed/html_widget/NTc2NDM=" height="360" width="300" style="align-self:left"></embed><br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/T9jGe6yLmgA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</table>
+</div>
+<div align="left" style="align-content: justify;">
+	<table align="center">
+		<td width="500px">
+			<h2>Acciones Realizadas</h2>
+			<ul>
+				{% for accion in acciones %}
+				<li>{{ accion }}</li>
+				{% endfor %}
+			</ul>
+		</td>
+		<td width="500px">
+			<h2>Acciones por realizar</h2>
+			<ul>
+				{% for accion in acciones %}
+				<li>{{ accion }}</li>
+				{% endfor %}
+			</ul>
+		</td>
+	</table>
+</div>
+{% endblock %}
